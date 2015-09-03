@@ -1,0 +1,66 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+}
+
+.header.main {
+    background-image: url('../img/scaffold.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+
+    padding: 5em;
+    padding-left: 300px;
+
+    h1 {
+	font-size: 110px;
+	
+    }
+
+    small {
+	color: $gray-light;
+	font-size: 25px;
+    }
+
+    .logo {
+	height: 200px;
+	position: absolute;
+	left: 100px;
+    }
+}
+
+.feature {
+    min-height: 100px;
+    padding: 20px;
+
+    background: $gray-light;
+    &.dark {
+	background: $gray-darker;
+	color: $gray-lighter;
+    }
+
+    p {
+	margin-top: 1em;
+    }
+    
+}
+
+.featurette {
+    padding: 5em;
+    
+    .col-sm-6 {
+	position: relative;
+	img {
+	    height: 5em;
+	    position: absolute;
+	    top: 40px;
+	    left: 1em;
+	}
+
+	padding: 20px;
+	padding-left: 10em;
+    }
+
+}
+ 
