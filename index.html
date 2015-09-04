@@ -12,13 +12,13 @@ layout: default
 </div>
 
 <div class="feature dark text-center">
-  <h1>What is Weber, and Why do I Need it?</h1>
+  <h1>What is Weber?</h1>
+  <p>Weber is a full web application scaffold for building heavy-duty webapps.</p>
   <p>
     Developing web applications is a lot of work. It involves setting up scaffolding for your backend and frontend code, deciding on a general structure and setting up deployment and upgrades. This often causes developers to spend a lot of time on boilerplate when they <strong>should</strong> be focusing on their actual app logic.
   </p>
-    <h3>Weber to the Rescue!</h3>
   <p>
-    Weber is a web application template intended to get you coding your actual app logic as quickly as possible, providing you with all the necessary boilerplate you'll need
+    Weber aims to solve that, getting you started coding, testing and deploying your projects in no-time.
   </p>
 
 </div>
@@ -38,7 +38,7 @@ layout: default
   <div class="row-fluid">
     <div class="col-sm-6">
       <h1>Powerful Deployment</h1>
-      <p>Weber uses ansible</p>
+      <p>Weber uses Ansible for deployment - covering all bases, but keeping you in control. Weber supports CentOS, Debian, Ubuntu and Arch Linux deployments out of the box</p>
       <img src="img/icon-deploy.png">
     </div>
     <div class="col-sm-6">
@@ -56,4 +56,24 @@ layout: default
 
   </div>
 
+</div>
+<div class="feature">
+  <div class="text-center">
+    <h1>Get Started!</h1>
+  </div>
+  <ol>
+    <li>Clone the project: <code>git clone https://github.com/getweber/weber myproj</code></li>
+    <li>Run the test server: <code>python manage.py testserver</code></li>
+    <li>Start hacking away!</li>
+  </ol>
+</div>
+
+<div class="feature dark">
+  <h3>Need a Different Mix?</h3>
+
+  <p>Weber comes pre-loaded with all you should need to write a full stack app, but in some cases you want to get started with less. Luckily we also provide two additional flavors of Weber for simpler projects:</p>
+  <ol>
+    <li><strong>weber-backend</strong> Includes all backend functionality, but does not have a frontend pipeline</li>
+    <li><strong>weber-micro</strong> Only contains deployment and an app skeleton, skipping DB, frontend, background workers etc.</li>
+  </ol>
 </div>
