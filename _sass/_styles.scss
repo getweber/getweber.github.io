@@ -40,6 +40,20 @@ body {
 	color: $gray-lighter;
     }
 
+    &.made-with-love {
+	color: white;
+
+	background: -webkit-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); /* Chrome 10+, Saf5.1+ */
+	background:    -moz-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); /* FF3.6+ */
+	background:     -ms-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); /* IE10 */
+	background:      -o-linear-gradient(90deg, #649173 10%, #DBD5A4 90%); /* Opera 11.10+ */
+	background:         linear-gradient(90deg, #649173 10%, #DBD5A4 90%); /* W3C */
+        img {
+	    height: 5em;
+	    margin: 3em;
+	}
+    }
+
     p {
 	margin-top: 1em;
     }
