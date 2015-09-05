@@ -9,6 +9,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     color: white;
+    position: relative;
 
     padding: 5em;
     padding-left: 300px;
@@ -29,6 +30,20 @@ body {
 	left: 100px;
     }
 }
+
+#latest-news {
+    position: absolute;
+    top: 10%;
+    right: 3em;
+    color: $gray-lighter;
+    opacity: 0.7;
+    &:hover {
+	opacity: 1.0;
+	transition: opacity 0.2s;
+    }
+    transition: opacity 1s;
+}
+
 
 .feature {
     min-height: 100px;
@@ -78,3 +93,15 @@ body {
 
 }
  
+
+.post-short {
+    h3>a {
+	text-decoration: none;
+    }
+}
+
+.post article {
+    margin-top: 2em;
+}
+
+

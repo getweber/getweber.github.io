@@ -4,11 +4,24 @@ layout: default
 
 
 <div class="header main">
+  <div id="latest-news">
+    <h4>Latest News</h4>
+    {% for post in site.posts limit:3 %}
+    <li>
+      <span>{{ post.date | date_to_string }}</span> &raquo;
+      <a href="{{ post.url }}">
+	{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </div>
+
   <img class="logo" src="img/weber-logo.png">
   <h1>
     Weber
   </h1>
   <small>Hatch your Webapps Today</small>
+
+
 </div>
 
 <div class="feature dark text-center">
@@ -20,6 +33,7 @@ layout: default
   <p>
     Weber aims to solve that, getting you started coding, testing and deploying your projects in no-time.
   </p>
+
 
 </div>
 <div class="featurette container">
