@@ -11,23 +11,24 @@ body {
     color: white;
     position: relative;
 
-    padding: 5em;
-    padding-left: 300px;
+    padding: 200px;
+    padding-left: 350px;
 
     h1 {
-	font-size: 110px;
+	font-size: 550%;
 	
     }
 
     small {
 	color: $gray-light;
-	font-size: 25px;
+	font-size: 160%;
     }
 
     .logo {
 	height: 200px;
 	position: absolute;
 	left: 100px;
+	top: 190px;
     }
 }
 
@@ -42,6 +43,22 @@ body {
 	transition: opacity 0.2s;
     }
     transition: opacity 1s;
+}
+
+@media (max-width: 1000px) {
+    #latest-news {
+	display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .logo {
+	display: none;
+    }
+
+    .header.main {
+	padding: 5em;
+    }
 }
 
 
